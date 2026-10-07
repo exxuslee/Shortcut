@@ -1,3 +1,4 @@
+/app/*.jks
 *.iml
 .gradle
 /local.properties
@@ -11,4 +12,3 @@ captures
 .cxx
 *.apk
 *.aab
-/app/keystore.jks

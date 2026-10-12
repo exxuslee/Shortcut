@@ -7,10 +7,18 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
+    private val targets = listOf(
+        "com.xbh.whiteboard",
+        "com.dazzle.whiteboard"
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val target = "com.xbh.whiteboard"
-        val launchIntent = packageManager.getLaunchIntentForPackage(target)
+
+        val launchIntent = targets.firstNotNullOfOrNull {
+            packageManager.getLaunchIntentForPackage(it)
+        }
+
         if (launchIntent != null) {
             try {
                 startActivity(launchIntent)

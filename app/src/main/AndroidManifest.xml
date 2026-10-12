@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <queries>
-        <package android:name="ua.kiev.intersystems.edpro.warranty" />
+<!--        <package android:name="ua.kiev.intersystems.edpro.warranty" />-->
+        <package android:name="com.xbh.whiteboard" />
+        <package android:name="com.dazzle.whiteboard" />
     </queries>
 
     <application
